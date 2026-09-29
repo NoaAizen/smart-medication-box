@@ -1,0 +1,27 @@
+# Arduino and PlatformIO build output
+build/
+.pio/
+*.elf
+*.hex
+*.bin
+*.eep
+*.o
+*.a
+*.map
+
+# Local editor settings and temporary files
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Keep report PDFs out of the public repository
+*.pdf
+*.PDF
