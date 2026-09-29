@@ -27,6 +27,9 @@ void loop() {
     long echoDurationUs = pulseIn(ECHO_PIN, HIGH);
 
     if (echoDurationUs == 0) {
+      // Clear the alert when no valid echo is received.
+      digitalWrite(LED_PIN, LOW);
+      noTone(BUZZER_PIN);
       delay(500);
       continue;
     }
